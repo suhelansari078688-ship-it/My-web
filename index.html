@@ -1,0 +1,118 @@
+4<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>suhel mods vip</title>
+    <style>
+        :root { --neon: #00ffff; --pink: #ff00ff; }
+        body {
+            background: #050505;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            text-align: center;
+            width: 320px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+        }
+        .logo {
+            width: 120px; 
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--neon);
+            margin-bottom: 15px;
+            box-shadow: 0 0 20px var(--neon);
+            object-fit: cover; /* Isse aapki DP perfect dikhegi */
+        }
+        h1 { font-size: 28px; color: var(--pink); margin: 0; text-shadow: 0 0 10px var(--pink); }
+        .input-box {
+            margin: 20px 0;
+            padding: 15px;
+            background: #000;
+            border: 1px dashed var(--neon);
+            color: var(--neon);
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            min-height: 25px;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+        .gen-btn { background: var(--neon); color: #000; }
+        .copy-btn { background: transparent; color: var(--neon); border: 1px solid var(--neon); }
+        .btn:hover { opacity: 0.8; transform: scale(1.03); box-shadow: 0 0 15px var(--neon); }
+        .tg-link {
+            margin-top: 20px;
+            display: inline-block;
+            color: var(--pink);
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="https://postimg.cc/CBHg7tQR" class="logo">
+        
+        <h1>suhel mods</h1>
+        <p style="color: #888; font-size: 12px;">VIP ACCESS GENERATOR</p>
+        
+        <div id="keyDisp" class="input-box">READY TO GEN...</div>
+        
+        <button class="btn gen-btn" onclick="gen()">GENERATE KEY</button>
+        <button class="btn copy-btn" onclick="copy()">COPY KEY</button>
+        
+        <a href="https://t.me/+6vPUwSBt9hg5N2I1" class="tg-link">Join Telegram Channel →</a>
+    </div>
+
+    <script>
+        // 2. APNI PASAND KI KEYS YAHAN DALEIN
+        const myKeys = [
+            "Suhelxvip787"
+        ];
+
+        const gen = () => {
+            const display = document.getElementById('keyDisp');
+            display.innerText = "WAIT...";
+            
+            setTimeout(() => {
+                // List mein se random key select hogi
+                const randomKey = myKeys[Math.floor(Math.random() * myKeys.length)];
+                display.innerText = randomKey;
+            }, 400);
+        }
+
+        const copy = () => {
+            const t = document.getElementById('keyDisp').innerText;
+            if(t !== "READY TO GEN..." && t !== "WAIT...") {
+                navigator.clipboard.writeText(t);
+                alert("Key Copied: " + t);
+            } else {
+                alert("Pehle key generate karein!");
+            }
+        }
+    </script>
+</body>
+</html>
